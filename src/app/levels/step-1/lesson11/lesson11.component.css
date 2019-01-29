@@ -1,0 +1,130 @@
+#car{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    transition: left 2s;
+}
+
+
+.script-text { 
+  height: 250px;
+  width: 90%;
+  border-radius: 2%;
+  background-color: #FAFFFD; 
+  border: 2px solid rgb(0, 0, 0);
+  text-align: left;
+ }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #4DC1D6;
+  padding: 10px;
+  grid-template-rows: 150px 150px 150px 150px;
+}
+  
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 2%;
+}
+
+  .map {
+    position: relative;
+    grid-area: map;
+    background-image: url("../../../../assets/pictures/level1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: 91DB41;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .script {
+    grid-area: script;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    position: relative;
+  }
+  .buttun {
+    grid-area: buttun;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .button {
+    background-color: #91DB41; /* Green */
+    border: none;
+    color: #FAFFFD;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .button1:hover {
+    background-color: #FAFFFD; 
+    color: black; 
+    border: 2px solid #91DB41;
+  }
+  
+  .button1 {
+    background-color: #91DB41;
+    color: white;
+  }
+  
+  .button2:hover {
+    background-color: #FAFFFD; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2 {
+    position: absolute;
+    background-color: #008CBA;
+    color: #FAFFFD;
+    bottom: 230px; 
+    left: 240px;
+  }
+  
+  .button3:hover {
+    background-color: #FAFFFD; 
+    color: black; 
+    border: 2px solid #F93434;
+  }
+  
+  .button3 {
+    position: absolute;
+    background-color: #f44336;
+    color: #FAFFFD;
+    bottom: 230px; 
+    left: 360px;
+  }
+
+  .car{
+    position: absolute;
+    background-image: url("../../../../assets/pictures/car-blue.png");
+    width: 130px;
+    height: 65px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: left 2s;
+  }

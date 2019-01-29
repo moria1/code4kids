@@ -1,0 +1,12 @@
+#he {    background-color: #5E1E3D!important;}
+
+.fa {
+    /* font-size: 30px; */
+    /* width: 60px; */
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }

@@ -1,0 +1,72 @@
+.mw-body-content {
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.875em;
+    z-index: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.mw-highlight pre {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+pre {
+    overflow-x: auto;
+}
+pre, .mw-code {
+    color: #000;
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    padding: 1em;
+    white-space: pre-wrap;
+}
+pre, .mw-code {
+    line-height: 1.3em;
+}
+.mw-body-content {
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.875em;
+    z-index: 0;
+}
+.mw-highlight .nt {
+    color: #008000;
+    font-weight: bold;
+}
+.mw-highlight pre {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+html {
+    font-size: 100%;
+}
+.mw-body-content h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
+    border-bottom: 1px solid #a2a9b1;
+}
+code {
+    color: #000;
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+pre, code, tt, kbd, samp, .mw-code {
+    font-family: monospace,monospace;
+}

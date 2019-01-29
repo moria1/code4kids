@@ -1,0 +1,16 @@
+<div class="grid-container">
+    <div class="map">
+         <div class="car" [style.left]="leftCar"></div>
+    </div>
+    <div class="script">
+            <!-- <input id="stright" type="textarea"  rows="4" cols="50" value="go stright()" class="script-text" [(ngModel)]="script" name="script1" #script1="ngModel"> -->
+            <textarea  id="stright" rows="4" cols="20" value="go stright()" class="script-text" [(ngModel)]="script" name="script1" #script1="ngModel"></textarea>          
+            <input value="run" type="button" (click)="runScript()" class="button button3" />
+            <button class="button button2">clean</button>  
+    </div>
+    <div class="buttun">
+        <button class="button button1">show example</button> 
+        <button class="button button1">explain me</button>
+        <button class="button button1">explain me</button>
+    </div> 
+
