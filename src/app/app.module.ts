@@ -33,6 +33,7 @@ import { LoginButtonComponent } from './login-button/login-button.component';
 import { ArticleMenuComponent } from './article-menu/article-menu.component';
 import { AboutMenuComponent } from './about-menu/about-menu.component';
 import { FormsModule }   from '@angular/forms';
+import { UsersService } from './services/users.service';
 
 const ROUTES:Routes = [{path:"home",component:HomeComponent},
 {path:"about",component:AboutComponent},
@@ -100,7 +101,7 @@ const ROUTES:Routes = [{path:"home",component:HomeComponent},
   imports: [
     BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,7 @@
 <button class="button button5" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
   Login</button>
 
-<div id="id01" class="modal">
+<div id="id01" class="modal modal-content animate">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <app-login></app-login>
 </div>

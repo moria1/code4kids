@@ -4,13 +4,55 @@
     </div>
     <div class="script">
             <!-- <input id="stright" type="textarea"  rows="4" cols="50" value="go stright()" class="script-text" [(ngModel)]="script" name="script1" #script1="ngModel"> -->
-            <textarea  id="stright" rows="4" cols="20" value="go stright()" class="script-text" [(ngModel)]="script" name="script1" #script1="ngModel"></textarea>          
+            <textarea  id="scriptArea" rows="4" cols="20" value="go straight()" class="script-text" [(ngModel)]="script" name="script1" #script1="ngModel"></textarea>          
             <input value="run" type="button" (click)="runScript()" class="button button3" />
-            <button class="button button2">clean</button>  
+            <button class="button button2" onclick="document.getElementById('scriptArea').value='go straight()'" [(ngModel)]="script" name="script1" #script1="ngModel">clean</button>  
     </div>
     <div class="buttun">
-        <button class="button button1">show example</button> 
-        <button class="button button1">explain me</button>
-        <button class="button button1">explain me</button>
-    </div> 
+        <button class="button button1" onclick="document.getElementById('example1').style.display='block'" style="width:auto;">show example</button> 
+        <button class="button button1" onclick="document.getElementById('hint1').style.display='block'" style="width:auto;">hint!</button>
+        <button class="button button1" onclick="document.getElementById('explain1').style.display='block'" style="width:auto;">explain me</button>
+    </div>
+    <div id="explain1" class="modal">
+        <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('explain1').style.display='none'" class="close" title="close">&times;</span>
+            </div>       
+            <div class="container">
+              <label><b>EXPLANATION:</b></label><br>
+              <p>Drive the car in the road. Be careful to ride in the leggal areas only.</p>
+              <p>Pay attention to the roadside stones.</p><br><br>
+              <p>Use the RUN buttun to run the script,</p>
+              <p>Use the CLEAN buttun to delete the changes.</p>
+              <h4>Good Luck!</h4>
+            </div>
+        </div>
+      </div>
+      <div id="hint1" class="modal">
+        <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('hint1').style.display='none'" class="close" title="close">&times;</span>
+            </div>       
+            <div class="container">
+              <label><b>HINT...</b></label>
+              <p>Roadside stones...</p>
+              <p>try and count them, it should help you...</p><br>
+              <h4>Good Luck!</h4>
+            </div>
+        </div>
+      </div> 
+      <div id="example1" class="modal">
+        <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('example1').style.display='none'" class="close" title="close">&times;</span>
+            </div>       
+            <div class="container">
+              <label><b>example:</b></label>
+              <video width="90%" height="300" controls>
+                <source src="../../../../assets/videos/example-vid-1.webm" type="video/webm">
+              </video>
+            </div>
+        </div>
+      </div>
+
 

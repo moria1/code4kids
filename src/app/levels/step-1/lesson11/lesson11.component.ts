@@ -13,7 +13,7 @@ export class Lesson11Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.script = "go stright()";
+    this.script = "go straight()";
     this.leftCar = "0px";
     this.leftNumber = 0;
   }
@@ -21,7 +21,7 @@ export class Lesson11Component implements OnInit {
   runScript(){
    let value = this.script;//get value
     value.trim();
-   if(value.startsWith("go stright(")){     
+   if(value.startsWith("go straight(")){     
      value = value.substring(value.indexOf('(')+1);
      value = value.replace(/\D/g, "");
    }
